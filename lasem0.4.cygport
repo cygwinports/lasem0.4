@@ -4,7 +4,7 @@ inherit gnome2
 NAME="lasem0.4"
 VERSION=0.4.1
 RELEASE=1
-CATEGORY="GNOME"
+CATEGORY="Libs"
 SUMMARY="GObject SVG/MathML library"
 DESCRIPTION="Lasem aims to be a C/Gobject based SVG/Mathml renderer and editor,
 supporting CSS style sheets (only rendering is implemented for now). It uses
@@ -14,6 +14,8 @@ output formats: xlib, PNG, SVG, PDF, PS, EPS..."
 PATCH_URI="0.4.1-no-undefined.patch"
 
 PKG_NAMES="lasem0.4 liblasem0.4_4 liblasem0.4-devel girepository-Lasem0.4"
+lasem0_4_CATEGORY="Graphics"
+lasem0_4_SUMMARY="SVG/MathML converter"
 lasem0_4_CONTENTS="usr/bin/lasem-render-0.4.exe"
 liblasem0_4_4_CONTENTS="usr/bin/cyglasem-0.4-4.dll usr/share/doc/ usr/share/locale/"
 liblasem0_4_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/"
