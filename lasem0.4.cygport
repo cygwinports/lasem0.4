@@ -2,7 +2,7 @@ ORIG_PN="lasem"
 inherit gnome2
 
 NAME="lasem0.4"
-VERSION=0.4.1
+VERSION=0.4.3
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GObject SVG/MathML library"
@@ -13,12 +13,14 @@ output formats: xlib, PNG, SVG, PDF, PS, EPS..."
 
 PATCH_URI="0.4.1-no-undefined.patch"
 
-PKG_NAMES="lasem0.4 liblasem0.4_4 liblasem0.4-devel girepository-Lasem0.4"
+PKG_NAMES="lasem0.4 liblasem0.4_4 liblasem0.4-devel liblasem0.4-doc girepository-Lasem0.4"
 lasem0_4_CATEGORY="Graphics"
 lasem0_4_SUMMARY="SVG/MathML converter"
-lasem0_4_CONTENTS="usr/bin/lasem-render-0.4.exe"
+lasem0_4_CONTENTS="usr/bin/lasem-render-0.4.exe usr/share/man/man1/"
 liblasem0_4_4_CONTENTS="usr/bin/cyglasem-0.4-4.dll usr/share/doc/ usr/share/locale/"
-liblasem0_4_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/"
+liblasem0_4_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
+liblasem0_4_doc_CATEGORY="Doc"
+liblasem0_4_doc_CONTENTS="usr/share/gtk-doc/"
 girepository_Lasem0_4_CONTENTS="usr/*/gir*/Lasem-0.4.*"
 
 MAKEOPTS+=" lasemdocdir=\$(docdir)"
